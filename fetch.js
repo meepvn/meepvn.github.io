@@ -1,5 +1,5 @@
-const ulElement = document.querySelector('user-list');
-
+const ulElement = document.querySelector('.user-list');
+ulElement.innerHTML = `abc`
 const getAllUsers = async () =>{
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
     const result = await res.json();
